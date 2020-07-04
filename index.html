@@ -4,39 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ActiveBox</title>
-  <link rel="shortcut icon" href="#">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta name="robots" content="noindex">
+
+  <!-- FaviCON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../img/favicons/site.webmanifest">
+  <link rel="mask-icon" href="../img/favicons/safari-pinned-tab.svg" color="#0016be">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#2b465f">
+
 
 </head>
 <body>
 
-  <header class="header">
-    <div class="container">
+  <header class="header" id="header">
+    <div class="container" id="cosiak">
       <div class="header-inner">
-        <img class="logo" src="img/ActiveBox.svg" alt="Logo">
+        <img class="logo" src="../img/ActiveBox.svg" alt="Logo">
         <nav class="menu">
-          <a class="menu_link" href="#">Features</a>
-          <a class="menu_link" href="#">Works</a>
-          <a class="menu_link" href="#">Our Team</a>
-          <a class="menu_link" href="#">Testimonials</a>
-          <a class="menu_link" href="#">Download</a>
+          <a class="menu_link" href="#" data-scroll="#features">Features</a>
+          <a class="menu_link" href="#" data-scroll="#works">Works</a>
+          <a class="menu_link" href="#" data-scroll="#team">Our Team</a>
+          <a class="menu_link" href="#" data-scroll="#testimonials">Testimonials</a>
+          <a class="menu_link" href="#" data-scroll="#download">Download</a>
         </nav>
 
-        <div class="burger">
+        <button class="burger" type="button" id="menuMob">
           <span class="burger-item"></span>
           <span class="burger-item"></span>
           <span class="burger-item"></span>
-        </div>
-
+        </button>
       </div>
     </div>
 
   </header>
 
 
-  <div class="intro">
+  <div class="intro" id="intro">
     <div class="container intro-inner">
       <h1 class="intro-title">Your Favorite One Page Multi Purpose Template</h1>
       <h2 class="intro-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
@@ -45,34 +56,34 @@
     </div>
   </div>
 
-  <div class="features container">
+  <div class="features container" id="features">
       <div class="features-item">
-        <img src="/img/features-icon/1.png" alt="" class="features-icon">
+        <img src="../img/features-icon/1.png" alt="" class="features-icon">
         <h4 class="features-title">Easily Customised</h4>
         <p class="features-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
       </div>
       <div class="features-item">
-        <img src="/img/features-icon/2.png" alt="" class="features-icon">
+        <img src="../img/features-icon/2.png" alt="" class="features-icon">
         <h4 class="features-title">Responsive REady</h4>
         <p class="features-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
       </div>
       <div class="features-item">
-        <img src="/img/features-icon/3.png" alt="" class="features-icon">
+        <img src="../img/features-icon/3.png" alt="" class="features-icon">
         <h4 class="features-title">Modern Design</h4>
         <p class="features-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
       </div>
       <div class="features-item">
-        <img src="/img/features-icon/4.png" alt="" class="features-icon">
+        <img src="../img/features-icon/4.png" alt="" class="features-icon">
         <h4 class="features-title">Clean Code</h4>
         <p class="features-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
       </div>
       <div class="features-item">
-        <img src="/img/features-icon/5.png" alt="" class="features-icon">
+        <img src="../img/features-icon/5.png" alt="" class="features-icon">
         <h4 class="features-title">Ready to Ship</h4>
         <p class="features-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
       </div>
       <div class="features-item">
-        <img src="/img/features-icon/6.png" alt="" class="features-icon">
+        <img src="../img/features-icon/6.png" alt="" class="features-icon">
         <h4 class="features-title">Download for Free</h4>
         <p class="features-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
       </div> 
@@ -80,9 +91,9 @@
   
   </div>
 
-  <div class="works">
+  <div class="works" id="works">
     <div class="work-item">
-      <img src="/img/work/11.png" alt="" class="work">
+      <img src="../img/work/11.png" alt="" class="work">
       <div class="work-content">
         <div class="work-title">User Interface Design</div>
         <p class="work-text">Project Name</p>
@@ -90,7 +101,7 @@
     </div>
     
     <div class="work-item">
-      <img src="/img/work/12.png" alt="" class="work">
+      <img src="../img/work/12.png" alt="" class="work">
       <div class="work-content">
         <div class="work-title">User Interface Design</div>
         <p class="work-text">Project Name</p>
@@ -98,7 +109,7 @@
     </div>
 
     <div class="work-item">
-      <img src="/img/work/13.png" alt="" class="work">
+      <img src="../img/work/13.png" alt="" class="work">
       <div class="work-content">
         <div class="work-title">User Interface Design</div>
         <p class="work-text">Project Name</p>
@@ -106,7 +117,7 @@
     </div>
 
     <div class="work-item">
-      <img src="/img/work/14.png" alt="" class="work">
+      <img src="../img/work/14.png" alt="" class="work">
       <div class="work-content">
         <div class="work-title">User Interface Design</div>
         <p class="work-text">Project Name</p>
@@ -114,7 +125,7 @@
     </div>
 
     <div class="work-item">
-      <img src="/img/work/15.png" alt="" class="work">
+      <img src="../img/work/15.png" alt="" class="work">
       <div class="work-content">
         <div class="work-title">User Interface Design</div>
         <p class="work-text">Project Name</p>
@@ -122,7 +133,7 @@
     </div>
 
     <div class="work-item">
-      <img src="/img/work/16.png" alt="" class="work">
+      <img src="../img/work/16.png" alt="" class="work">
       <div class="work-content">
         <div class="work-title">User Interface Design</div>
         <p class="work-text">Project Name</p>
@@ -130,7 +141,7 @@
     </div>
 
     <div class="work-item">
-      <img src="/img/work/17.png" alt="" class="work">
+      <img src="../img/work/17.png" alt="" class="work">
       <div class="work-content">
         <div class="work-title">User Interface Design</div>
         <p class="work-text">Project Name</p>
@@ -138,7 +149,7 @@
     </div>
 
     <div class="work-item">
-      <img src="/img/work/18.png" alt="" class="work">
+      <img src="../img/work/18.png" alt="" class="work">
       <div class="work-content">
         <div class="work-title">User Interface Design</div>
         <p class="work-text">Project Name</p>
@@ -147,66 +158,84 @@
 
   </div>
 
-  <div class="container teams">
+  <div class="container teams" id="team">
     <div class="team">
-      <img src="/img/photo/1.png" alt="" class="photo-team">
+      <img src="../img/photo/1.png" alt="" class="photo-team">
       <h4 class="team-title">Ruth Woods</h4>
       <h5 class="team-subtitle">Founder, CEO</h5>
       <p class="team-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
       <div class="team-icon">
-        <a href="#"><img src="/img/icon/icon-1.svg" ></a>
-        <a href="#"><img src="/img/icon/icon-2.svg" ></a>
-        <a href="#"><img src="/img/icon/icon-3.svg" ></a>
+        <a href="#"><img src="../img/icon/icon-1.svg" ></a>
+        <a href="#"><img src="../img/icon/icon-2.svg" ></a>
+        <a href="#"><img src="../img/icon/icon-3.svg" ></a>
       </div>
     </div>
 
     <div class="team">
-      <img src="/img/photo/2.png"  class="photo-team">
+      <img src="../img/photo/2.png"  class="photo-team">
       <h4 class="team-title">Timothy Reed</h4>
       <h5 class="team-subtitle">Co-Founder, Developer</h5>
       <p class="team-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
       <div class="team-icon">
-        <a href="#"><img src="/img/icon/icon-1.svg" ></a>
-        <a href="#"><img src="/img/icon/icon-2.svg" ></a>
-        <a href="#"><img src="/img/icon/icon-3.svg" ></a>
+        <a href="#"><img src="../img/icon/icon-1.svg" ></a>
+        <a href="#"><img src="../img/icon/icon-2.svg" ></a>
+        <a href="#"><img src="../img/icon/icon-3.svg" ></a>
       </div>
     </div>
 
     <div class="team">
-      <img src="/img/photo/3.png"  class="photo-team">
+      <img src="../img/photo/3.png"  class="photo-team">
       <h4 class="team-title">Victoria Valdez</h4>
       <h5 class="team-subtitle">UI Designer</h5>
       <p class="team-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
       <div class="team-icon">
-        <a href="#"><img src="/img/icon/icon-1.svg" ></a>
-        <a href="#"><img src="/img/icon/icon-2.svg" ></a>
-        <a href="#"><img src="/img/icon/icon-3.svg" ></a>
+        <a href="#"><img src="../img/icon/icon-1.svg" ></a>
+        <a href="#"><img src="../img/icon/icon-2.svg" ></a>
+        <a href="#"><img src="../img/icon/icon-3.svg" ></a>
       </div>
     </div>
 
     <div class="team">
-      <img src="/img/photo/4.png"  class="photo-team">
+      <img src="../img/photo/4.png"  class="photo-team">
       <h4 class="team-title">Beverly Little</h4>
       <h5 class="team-subtitle">Data Scientist</h5>
       <p class="team-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
       <div class="team-icon">
-        <a href="#"><img src="/img/icon/icon-1.svg" ></a>
-        <a href="#"><img src="/img/icon/icon-2.svg" ></a>
-        <a href="#"><img src="/img/icon/icon-3.svg" ></a>
+        <a href="#"><img src="../img/icon/icon-1.svg" ></a>
+        <a href="#"><img src="../img/icon/icon-2.svg" ></a>
+        <a href="#"><img src="../img/icon/icon-3.svg" ></a>
       </div>
     </div>
 
   </div>
 
-  <div class="clients">
-    <img src="/img/photo.jpg" alt="" class="clients-photo">
-    <div class="clients-content">
-      <p class="clients-text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
-      <p class="clients-auther">Susan Sims, Interaction Designer at XYZ</p>
-    </div>
-  </div>
+  <div class="content testimonials" id="testimonials">  
+    <div  id="clientsSider" class="clientsSider">
 
-  <div class="download container">
+      <div>
+        <div class="clients">
+          <img src="../img/photo.jpg" alt="" class="clients-photo">
+          <div class="clients-content">
+            <p class="clients-text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+            <p class="clients-auther">Susan Sims, Interaction Designer at XYZ</p>
+          </div>
+          </div>
+      </div>
+
+      <div>
+        <div class="clients">
+          <img src="../img/photo.jpg" alt="" class="clients-photo">
+          <div class="clients-content">
+            <p class="clients-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae alias cupiditate saepe explicabo odit animi quam dolores veniam, nisi obcaecati sint placeat nulla officiis quibusdam tempore mollitia, doloremque maxime! Magni?"</p>
+            <p class="clients-auther">Susan Sims, Interaction Designer at XYZ</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+  <div class="download container" id="download">
     <div class="download-text">
       <p class="download-title">Are You Ready to Start? Download Now For Free!</p>
       <p class="download-subtitle">Fusce dapibus, tellus ac cursus commodo</p>
@@ -227,9 +256,9 @@
         <div class="footer-share">
           <div>Share with Love</div>
           <div class="team-icon icon">
-            <a href="#"><img src="/img/icon/icon-1.svg" ></a>
-            <a href="#"><img src="/img/icon/icon-2.svg" ></a>
-            <a href="#"><img src="/img/icon/icon-3.svg" ></a>
+            <a href="#"><img src="../img/icon/icon-1.svg" ></a>
+            <a href="#"><img src="../img/icon/icon-2.svg" ></a>
+            <a href="#"><img src="../img/icon/icon-3.svg" ></a>
           </div>
         </div>
         <div class="footer-about">
@@ -241,9 +270,10 @@
   </div>
 
   <div class="basement">
-    <div>Copyright © 2015 ActiveBox. All Rights Reserved</div> 
-    <div>Made with <span>by Kamal Chaneman</span> </div> 
+    <div>Copyright © 2019 ActiveBox. All Rights Reserved</div> 
   </div>
 
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
