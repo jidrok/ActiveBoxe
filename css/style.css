@@ -19,6 +19,15 @@ body{
   width: 100%;
   max-height: 100px;
 }
+.header.fixed{
+  position: fixed;
+  background: #2a2e48 url(../img/intro.jpg) center no-repeat ;
+}
+.fixed .header-inner{
+  padding-top:15px ;
+  padding-bottom: 15px;
+  border-bottom: 0px;
+}
 .container{
   width: 100%;
   max-width: 1170px;
@@ -65,9 +74,10 @@ body{
   flex-direction: column;
   justify-content: center;
   height: 750px;
-  background: #2a2e48 url(/img/intro.jpg) center no-repeat ;
+  background: #2a2e48 url(../img/intro.jpg) center no-repeat ;
   background-size: cover;
   padding-top: 100px;
+  margin-bottom: 30px;
 } 
 .intro-inner{
   max-width: 970px;
@@ -90,7 +100,6 @@ body{
   font-style: 22px;
   color: #ffff;
   line-height: 1.5;
-  font-weight: 400px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 60px;
@@ -108,11 +117,8 @@ body{
   text-transform: uppercase;
   text-decoration: none;
   padding: 14px 40px;
-  background-repeat: 3px;
   font-family: 'Raleway';
   cursor: pointer;
-  transform: background .1s linear;
-
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -133,6 +139,7 @@ body{
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 .features-item{
   text-align: center;
@@ -162,7 +169,7 @@ body{
 =================*/
 
 .works{
-  margin-top: 90px;
+  padding-top: 50px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -215,7 +222,9 @@ body{
 /* TEAMS 
 =================*/
 .teams{
+  padding-top: 20px;
   margin-top: 100px;
+  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -266,11 +275,47 @@ body{
 
 /* ClIENTS 
 =================*/
-
+.slick-dots{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 50%;
+  position: absolute;
+  top: 92%;
+  right: 0;
+  z-index: 2;
+}
+.slick-dots button{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background:rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 0;
+  margin-right: 20px;
+  border:0;
+  font-size: 0;
+  color: transparent;
+  opacity: 0.5;
+}
+.slick-dots .slick-active button{
+  opacity: 1;
+}
+.clientsSider{
+  overflow: hidden;
+}
+.clientsSider .slick-initialized{
+  height: auto;
+}
+.content{
+  padding-top: 50px;
+}
 .clients{
-  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
+  background-color: #53354a;
 }
 .clients-photo{
   width: 50%;
@@ -279,7 +324,6 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #53354a;
   color: #ffffff;
   width: 50%;
   padding: 0 0 0 80px;
@@ -298,14 +342,15 @@ body{
   line-height: 21px;
   text-transform: uppercase;
   margin: 30px 0 0 0;
+  padding-bottom: 40px;
 }
 
 /* Download 
 =================*/
 
 .download{
-  margin-top: 100px;
-  padding: 0;
+  padding-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -340,7 +385,6 @@ body{
 ======================*/
 
 .footer{
-  margin-top: 100px;
   background-color: #3a3e64;
   padding: 70px 0;
 }
@@ -391,10 +435,6 @@ address p{
   font-weight: 400;
   line-height: 1.5;
 }
-.basement span{
-  color: #ffff;
-}
-
 .burger{
   display: none;
 }
@@ -405,7 +445,6 @@ address p{
   margin: 6px;
   background-color: #fff;
 }
-
 /* MEDIA 
 ==============*/
 
@@ -415,7 +454,7 @@ address p{
   }
   .header{
     padding: 0 50px;
-    max-width: 1000px;
+    max-width: 1200px;
   }
   .header-inner{
     padding: 20px 0;
@@ -430,16 +469,30 @@ address p{
   .team-text{
     max-width: 270px;
   }
+  .clients-content{
+    padding-left: 40px;
+  }
+  .clients-text{
+    font-size: 30px;
+    max-width: 400px;
+  }
+  .clients-auther{
+    font-size: 11px;
+  }
 }
 
 @media (max-width:992px) {
   .container{
     max-width: 740px;
   }
+  #cosiak{
+    max-width: 922px;
+    margin: 0;
+  }
   .header{
     display: flex;
     justify-content: center;
-    padding: 0 50px;
+    padding: 0 0px;
   }
   .header-inner{
     padding: 20px 0;
@@ -468,28 +521,37 @@ address p{
   .features{
     max-width: 740px;
   }
+  .work-item{
+    width: 50%;
+  }
+  .work{
+    min-width: 100%;
+  }
   .teams{
     max-width: 740px;
   }
   .clients{
     margin-top: 40px ;
   }
-  .clients-text{
-    font-size: 24px;
-    max-width: 400px;
+  .clients-photo{
+    width: 100%;
+    margin: 20px;
   }
   .clients-content{
-    padding-left: 30px;
+    padding: 30px 20px 30px 30px ;
+    width: 100%;
   }
-  .clients-auther{
-    font-size: 11px;
+  .clients-text{
+    font-size: 36px;
+    width: 100%;
+    max-width: 900px;
   }
   .download{
     margin-top: 50px;
   }
   .footer{
     margin-top: 50px;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 40px;
   }
   .footer-about{
@@ -503,15 +565,39 @@ address p{
 @media (max-width:768px){
   .menu{
     display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: right;
+    background-color: #2a2e48d2;
+    margin: 0;
+    padding: 0 10%;
+  }
+  .menu_link{
+    padding: 15px 0;
+    font-size: 20px;
   }
   .burger{
     display: block;
+    background-color: #2a2e4800;
+  }
+  .menu.show{
+  display: flex;
   }
   .conteiner{
     max-width: 540px;
   }
+  #cosiak{
+    max-width: 540px;
+    margin: 0 40px;
+  }
   .logo{
     margin-left: 20px;
+  }
+  .intro{
+    margin: 0;
   }
   .intro-inner{
     max-width: 540px;
@@ -527,16 +613,16 @@ address p{
   }
   .features{
     margin-top: 40px;
-    width: 540px;
+    max-width: 540px;
   }
   .features-item{
-    width: 50%;
+    width: 100%;
   }
   .works{
     margin-top: 50px;
   }
   .work-item{
-    width: 50%;
+    width: 100%;
   }
   .work-content:active:focus{
     opacity: 1; 
@@ -544,32 +630,36 @@ address p{
   .teams{
     max-width: 600px;
   }
+  .team{
+    width: 100%;
+  }
   .team-text,
   .team-icon,
   .team-title{
     margin-top: 20px;
   }
-  .clients-text{
-    padding-top: 5px;
-    max-width: 300px;
-    font-size: 22px;
-  }
   .clients-auther{
     margin-top: 10px;
-    font-size: 10px;
+    font-size: 16px;
   }
   .download-title{
-    font-size: 24px;
+    font-size: 18px;
   }
   .download{
-    margin-top: 30px;
+    padding-top: 30px;
   }
   .download a{
     margin-top: 20px;
   }
   .footer{
     margin-top: 30px;
-    padding: 40px 0;
+    padding: 50px 0;
+  }
+  .footer-location,
+  .footer-share,
+  .footer-about{
+    width: 100%;
+    margin-bottom: 50px;
   }
   .footer-location div,
   .footer-share div,
@@ -588,10 +678,7 @@ address p{
     margin-top: 15px;
   }
   .footer-about{
-    max-width: 200px;
-  }
-  .footer{
-    padding: 30px 0;
+    margin: auto;
   }
   .basement{
     padding: 18px 0;
@@ -601,5 +688,20 @@ address p{
 @media (max-width:578px) {
   .conteiner{
     width: 90%;
+  }
+  .intro-title{
+    font-size: 24px;
+    max-width: 90%;
+  }
+  .intro-subtitle{
+    font-size: 14px;
+    max-width: 90%;
+  }
+  .features{
+    max-width: 90%;
+  }
+  .download-title,
+  .download-subtitle{
+    max-width: 90%;
   }
 }
