@@ -173,6 +173,8 @@ body{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 1170px;
+  margin: auto;
 }
 .work-item{
   width: 25%;
@@ -275,15 +277,26 @@ body{
 
 /* ClIENTS 
 =================*/
+.testimonials{
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.clientsSider{
+  padding-bottom: 40px;
+}
 .slick-dots{
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 50%;
+  width: 100%;
   position: absolute;
-  top: 92%;
+  top: 70%;
   right: 0;
   z-index: 2;
 }
@@ -299,6 +312,9 @@ body{
   font-size: 0;
   color: transparent;
   opacity: 0.5;
+}
+.slick-slide{
+  height: 430px;
 }
 .slick-dots .slick-active button{
   opacity: 1;
@@ -316,8 +332,10 @@ body{
   display: flex;
   flex-wrap: wrap;
   background-color: #53354a;
+  height: 330px;
 }
 .clients-photo{
+  max-height: 330px;
   width: 50%;
 }
 .clients-content{
@@ -326,14 +344,13 @@ body{
   justify-content: center;
   color: #ffffff;
   width: 50%;
-  padding: 0 0 0 80px;
+  padding: 20px 30px 20px 80px;
   margin: 0;
 }
 .clients-text{
   font-family: 'Cardo', serif;
   font-size: 36px;
   line-height: 1.2;
-  max-width: 500px;
   margin: 0;
 }
 .clients-auther{
@@ -349,7 +366,7 @@ body{
 =================*/
 
 .download{
-  padding-top: 100px;
+  padding-top: 10px;
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
@@ -530,12 +547,20 @@ address p{
   .teams{
     max-width: 740px;
   }
+  .slick-dots{
+    top: 90%;
+  }
   .clients{
     margin-top: 40px ;
+    height: 700px;
+  }
+  .slick-list{
+    height: 800px;
   }
   .clients-photo{
     width: 100%;
     margin: 20px;
+    max-height: 430px;
   }
   .clients-content{
     padding: 30px 20px 30px 30px ;
@@ -546,8 +571,11 @@ address p{
     width: 100%;
     max-width: 900px;
   }
+  .slick-dots{
+    top: 90%;
+  }
   .download{
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .footer{
     margin-top: 50px;
@@ -642,6 +670,14 @@ address p{
     margin-top: 10px;
     font-size: 16px;
   }
+  .clients{
+    width: 100%;
+  }
+  .clients-photo{
+    max-height: 330px;
+    max-width: 760px;
+    width: 92%;
+  }
   .download-title{
     font-size: 18px;
   }
@@ -699,6 +735,9 @@ address p{
   }
   .features{
     max-width: 90%;
+  }
+  .clients-text{
+    font-size: 28px;
   }
   .download-title,
   .download-subtitle{
